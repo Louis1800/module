@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-sm-3">
+			
+		</div>
+		<div class="col-sm-6">
+			<div class="header">
+			<h2>注册</h2>
+			</div>
+			<form action="" id="signup">
+				<div class="form-group">
+					<label>用户名</label>
+					<input type="text" class="form-control" name="id" data-rule='pattern:"^[A-Za-z0-9]+$"|minlength:2|maxlength:16' placeholder="用户名的最大长度为16，最小长度为2,且只能为字母和数字">
+					<div class="input-err" id="id-input-err">用户名格式有误</div>
+				</div>
+				<div class="form-group">
+					<label>密码</label>
+					<input type="text" class="form-control" name="passport" data-rule="minlength:6|maxlength:32" placeholder="密码至少需要6位">
+					<div class="input-err" id="passport-input-err">密码格式有误</div>
+				</div>
+				<div class="form-group">
+					<label>姓名</label>
+					<input type="text" class="form-control" name="name" data-rule="minlength:2|maxlength:16" placeholder="姓名长度在2到16之间">
+					<div class="input-err" id="name-input-err">姓名格式有误</div>
+				</div>
+				<div class="form-group">
+					<label>年龄</label>
+					<input type="text" class="form-control" name="age" data-rule="min:18" placeholder="至少18岁">
+					<div class="input-err" id="age-input-err">您未满18岁</div>
+				</div>
+				<div class="form-group">
+					<label>性别</label>
+					<div class="">男
+					<input type="radio" name="gender" value="1" checked></div>
+					<div class="">女
+					<input type="radio" name="gender" value="0"></div>
+					<!-- <div class="input-err" id="gender-input-err">请填写性别</div> -->
+				</div>
+				<div class="form-group">
+					<button type="submit" class="form-control">注册</button>
+				</div>
+			</form>
+		</div>
+		<div class="col-sm-3">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../lib/js/bootstrap.js"></script>
+	<script type="text/javascript" src="validator.js"></script>
+	<script type="text/javascript" src="input.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

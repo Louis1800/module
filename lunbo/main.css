@@ -1,0 +1,55 @@
+/*.container{
+	margin:0 200px;
+}*/
+
+/*内容*/
+.v_content_list {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.v_content_list ul{
+	/*width: 400%;*/
+	margin: 0;
+	padding: 0;
+}
+.v_content_list li{
+	list-style-type: none;
+	float: left;
+	/*width: 6.25%;*/
+	padding: 0 10px;
+}
+.v_content_list li img{
+	max-width: 100%;
+}
+
+/*导航*/
+.v_caption{
+	font-size: 18px;
+}
+.v_caption>*{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+.v_caption .more{
+	float: right;
+}
+.hightlight-tip{
+	margin: 0 20px;
+}
+.hightlight-tip span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin:20px 10px;
+	line-height: 20px;
+	border-radius: 50%;
+	background: #333;
+}
+.hightlight-tip .current{
+	background: #ff0000;
+}
+.change_btn{
+}
